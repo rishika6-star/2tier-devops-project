@@ -1,0 +1,14 @@
+# After running:
+# terraform apply
+
+Public IP:
+<your-ec2-public-ip>
+
+SSH Command:
+ssh -i your-key.pem ubuntu@<public-ip>
+
+Backend URL:
+http://<public-ip>:5000
+
+Frontend URL:
+http://<public-ip>
