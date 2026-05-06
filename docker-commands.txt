@@ -1,0 +1,29 @@
+# Build image
+docker build -t backend-app .
+
+# Run container
+docker run -d -p 5000:5000 backend-app
+
+# List containers
+docker ps
+
+# Stop container
+docker stop <container_id>
+
+# Remove container
+docker rm <container_id>
+
+# Remove image
+docker rmi <image_id>
+
+# Login Docker Hub
+docker login
+
+# Tag image
+docker tag backend-app username/backend-app:latest
+
+# Push image
+docker push username/backend-app:latest
+
+# Pull image
+docker pull username/backend-app:latest
